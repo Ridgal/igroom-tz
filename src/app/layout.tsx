@@ -1,15 +1,26 @@
+import { QueryProvider } from "@/shared/providers/QueryProvider";
+import { BottomNavigation } from "@/widgets/bottom-navigation/ui";
+import { Header } from "@/widgets/header/ui";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: 'swap'
+});
+
+const interSans = Inter({
+  variable: "--font-inter-sans",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -17,20 +28,24 @@ export const metadata: Metadata = {
   description: "Igroom app",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex justify-center items-center min-h-screen bg-gray-100`}
+        className={`${geistSans.variable} ${geistMono.variable} ${interSans.variable} antialiased h-full bg-gray-100`}
       >
-        <div className="w-full max-w-[400px] bg-white min-h-screen md:min-h-[90vh] md:rounded-xl md:shadow-lg">
-          {children}
+        <div className="flex justify-center h-full">
+          <main className="flex flex-col h-full w-full max-w-[400px] bg-white md:rounded-xl md:shadow-lg">
+            <Header />
+            <div className="flex-1">
+              <QueryProvider>{children}</QueryProvider>
+            </div>
+            <BottomNavigation />
+          </main>
         </div>
       </body>
     </html>
   );
 };
+
+export default RootLayout;
