@@ -1,47 +1,30 @@
-# Igroom — тестовое мобильное приложение
+# 🌟 Igroom — мобильное приложение (тестовый проект)
 
-Это тестовое мобильное приложение **Igroom**, разработанное с использованием современных технологий и лучших практик фронтенд-разработки.
+<div align="center">
+  <img src="https://img.shields.io/badge/Next-14-black?style=for-the-badge&logo=next.js" alt="Next.js">
+  <img src="https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Tailwind-3.4-blue?style=for-the-badge&logo=tailwindcss" alt="Tailwind">
+  <br>
+  <img src="https://img.shields.io/badge/Zod-3.22-purple?style=for-the-badge" alt="Zod">
+  <img src="https://img.shields.io/badge/React_Query-5-red?style=for-the-badge&logo=react" alt="React Query">
+  <img src="https://img.shields.io/badge/Zustand-4-lightgrey?style=for-the-badge" alt="Zustand">
+</div>
 
-## Стек технологий
+## 🚀 Технологический стек
 
-<table>
-  <tr>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=nextjs" width="48" height="48" alt="Next.js" />
-      <br>Next.js
-    </td>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=ts" width="48" height="48" alt="TypeScript" />
-      <br>TypeScript
-    </td>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="Tailwind CSS" />
-      <br>Tailwind
-    </td>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=zustand" width="48" height="48" alt="React" />
-      <br>React
-    </td>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=docker" width="48" height="48" alt="GraphQL" />
-      <br>GraphQL
-    </td>
-  </tr>
-</table>
+- **Фреймворк**: Next.js 14 (App Router)
+- **Язык**: TypeScript 5
+- **Стили**: Tailwind CSS 3.4
+- **Валидация**: Zod 3.22
+- **API клиент**: React Query 5
+- **Состояние**: Zustand 4
+- **Архитектура**: FSD
 
-## Запуск проекта локально
+## 🛠 Установка и запуск
 
-Для запуска проекта в режиме разработки выполните следующие команды:
-
+### Клонирование репозитория
 ```bash
-npm install
-npm run dev
-# или
-yarn
-yarn dev
-# или
-pnpm install
-pnpm dev
-
+git clone https://github.com/ваш-репозиторий.git
+cd igroom-app
 
 
