@@ -16,7 +16,11 @@ const ProfileInfo = () => {
   const { data, isLoading, error } = useProfileQuery(PROFILE_ID);
 
   if (isLoading) return <div>Загрузка...</div>;
-  if (error) return <div>Ошибка загрузки профиля</div>;
+  if (error) {
+    console.error("Ошибка валидации:", error);
+    return <div>Некорректные данные профиля</div>;
+  }
+
 
   return (
     <div className="max-w-sm mx-auto text-center">

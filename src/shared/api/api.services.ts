@@ -1,5 +1,6 @@
 import axios from "axios";
-import { ResGetProfile } from "./api.types";
+import { safeParse } from "../lib/zod";
+import { GetProfileResponseSchema, ResGetProfile } from "./api.types";
 
 const axiosInstance = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_URL,
@@ -7,9 +8,9 @@ const axiosInstance = axios.create({
   withCredentials: true,
 });
 
-const getProfile = async (id: string) => {
-  const response = await axiosInstance.get<ResGetProfile>(`profile/${id}`);
-  return response.data;
+const getProfile = async (id: string): Promise<ResGetProfile> => {
+  const response = await axiosInstance.get(`profile/${id}`);
+  return safeParse(GetProfileResponseSchema, response.data);
 };
 
 export const api = {
