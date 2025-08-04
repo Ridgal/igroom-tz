@@ -4,13 +4,30 @@
 
 ## Стек технологий
 
-- **Next.js 15 (App Router)
-- **TypeScript**
-- **React Query** — для эффективного управления серверным состоянием и асинхронными запросами
-- **Zod** — для валидации данных и схем
-- **Zustand** — для управления локальным состоянием
-- **Tailwind CSS** — для быстрого и адаптивного стилизованного интерфейса
-- **Архитектура Feature-Sliced Design (FSD)** — для масштабируемой и поддерживаемой структуры проекта
+<table>
+  <tr>
+    <td align="center" width="96">
+      <img src="https://skillicons.dev/icons?i=nextjs" width="48" height="48" alt="Next.js" />
+      <br>Next.js
+    </td>
+    <td align="center" width="96">
+      <img src="https://skillicons.dev/icons?i=ts" width="48" height="48" alt="TypeScript" />
+      <br>TypeScript
+    </td>
+    <td align="center" width="96">
+      <img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="Tailwind CSS" />
+      <br>Tailwind
+    </td>
+    <td align="center" width="96">
+      <img src="https://skillicons.dev/icons?i=zustand" width="48" height="48" alt="React" />
+      <br>React
+    </td>
+    <td align="center" width="96">
+      <img src="https://skillicons.dev/icons?i=docker" width="48" height="48" alt="GraphQL" />
+      <br>GraphQL
+    </td>
+  </tr>
+</table>
 
 ## Запуск проекта локально
 
