@@ -3,7 +3,6 @@
 import { useProfileQuery } from "@/shared/api/queries/useProfileQuery";
 import { PROFILE_ID } from "@/shared/utils/utils";
 
-
 const ProfileBio = () => {
   const { data } = useProfileQuery(PROFILE_ID);
 

@@ -21,7 +21,6 @@ const ProfileInfo = () => {
     return <div>Некорректные данные профиля</div>;
   }
 
-
   return (
     <div className="max-w-sm mx-auto text-center">
       <div className="relative w-60 h-60 mx-auto">
@@ -37,7 +36,6 @@ const ProfileInfo = () => {
           P
         </div>
 
-        {/* Измененный блок иконок */}
         <div className="absolute flex flex-col items-center gap-4 md:gap-8 top-4 left-full ml-2 md:ml-4 z-20">
           <div className="flex flex-col items-center">
             <ExitIcon className="fill-icon w-8 h-8 md:w-10 md:h-10 cursor-pointer" />
