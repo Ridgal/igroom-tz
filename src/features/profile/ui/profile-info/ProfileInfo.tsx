@@ -36,19 +36,19 @@ const ProfileInfo = () => {
         <div className="absolute top-4 left-2 w-12 h-12 bg-green-500 text-3xl font-bold rounded-full flex items-center justify-center z-20">
           P
         </div>
-        <div className="absolute flex flex-col items-center gap-8 top-4 left-64 z-20">
-          <div>
-            <ExitIcon className="fill-icon w-10! h-10! cursor-pointer" />
-          </div>
 
+        {/* Измененный блок иконок */}
+        <div className="absolute flex flex-col items-center gap-4 md:gap-8 top-4 left-full ml-2 md:ml-4 z-20">
           <div className="flex flex-col items-center">
-            <EyeIcon className="fill-icon w-10! h-10! cursor-pointer" />
-            <p>Это я</p>
+            <ExitIcon className="fill-icon w-8 h-8 md:w-10 md:h-10 cursor-pointer" />
           </div>
-
           <div className="flex flex-col items-center">
-            <CatIcon className="fill-icon w-10! h-10! cursor-pointer" />
-            <p>Котум</p>
+            <EyeIcon className="fill-icon w-8 h-8 md:w-10 md:h-10 cursor-pointer" />
+            <p className="text-sm md:text-base">Это я</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <CatIcon className="fill-icon w-8 h-8 md:w-10 md:h-10 cursor-pointer" />
+            <p className="text-sm md:text-base">Котум</p>
           </div>
         </div>
       </div>
