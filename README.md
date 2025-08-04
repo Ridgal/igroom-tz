@@ -36,6 +36,7 @@ yarn
 # или
 npm install
 ```
+
 3. Запустите в режиме разработки
 ```bash
 yarn dev
@@ -43,7 +44,7 @@ yarn dev
 npm run dev
 ```
 
-4.Основные команды Docker:
+4. Основные команды Docker:
 ```bash
 # Сборка и запуск в фоновом режиме
 docker-compose up --build -d
