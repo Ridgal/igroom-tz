@@ -10,7 +10,7 @@ export const useProfileQuery = (id: string) =>
     queryKey: ["profile", id],
     queryFn: async () => {
       const data = await api.getProfile(id);
-      return GetProfileResponseSchema.parse(data); // Валидация здесь
+      return GetProfileResponseSchema.parse(data);
     },
     staleTime: 1000 * 60 * 5,
-  });
+});

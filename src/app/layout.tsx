@@ -35,9 +35,11 @@ function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
         className={`${geistSans.variable} ${geistMono.variable} ${interSans.variable} antialiased h-full bg-gray-100`}
       >
         <div className="flex justify-center h-full">
-          <main className="flex flex-col h-full w-full max-w-[400px] bg-white md:rounded-xl md:shadow-lg">
-            <Header />
-            <div className="flex-1">
+          <main className="flex flex-col h-full w-full max-w-[400px] bg-white md:rounded-xl md:shadow-lg relative">
+            <div className="fixed top-0 w-full max-w-[400px] z-50">
+              <Header />
+            </div>
+            <div className="flex-1 pt-10">
               <QueryProvider>{children}</QueryProvider>
             </div>
             <BottomNavigation />

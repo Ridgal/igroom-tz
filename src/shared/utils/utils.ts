@@ -10,10 +10,10 @@ import {
 type DateString = string | undefined;
 
 export function formatIsoDate(isoDate?: DateString): string {
-  if (!isoDate) return ""; // если undefined или пусто, возвращаем пустую строку
+  if (!isoDate) return "";
 
   const date = parseISO(isoDate);
-  if (!isValid(date)) return ""; // если дата невалидная — тоже пустая строка
+  if (!isValid(date)) return "";
 
   const now = new Date();
 
