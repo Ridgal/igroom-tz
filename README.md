@@ -29,6 +29,5 @@ git clone https://github.com/ваш-репозиторий.git
 yarn
 
 yarn start
-cd igroom-app
 
 
